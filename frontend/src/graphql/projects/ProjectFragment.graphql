@@ -1,0 +1,14 @@
+#import "../users/UserFragment.graphql"
+
+fragment Project on Project {
+    id,
+    name,
+    image,
+    description,
+    users {
+        ...User
+    },
+    creator {
+        ...User
+    }
+}

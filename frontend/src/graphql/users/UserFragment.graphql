@@ -1,0 +1,11 @@
+fragment User on User {
+    id
+    name
+    email
+    avatar
+    processed_avatar
+    theme
+    status
+    bio
+    profession
+}

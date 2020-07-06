@@ -1,0 +1,9 @@
+#import "../users/UserFragment.graphql"
+
+fragment Team on Team {
+    id
+    name
+    users {
+        ...User
+    }
+}

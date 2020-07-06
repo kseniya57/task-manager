@@ -1,0 +1,7 @@
+#import "./ChatFragment.graphql"
+
+mutation updateChat ($id: Int!, $input: ChatInput!) {
+    updateChat (id: $id, input: $input) {
+        ...Chat
+    }
+}

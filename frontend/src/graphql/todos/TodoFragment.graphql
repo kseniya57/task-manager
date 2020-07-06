@@ -1,0 +1,12 @@
+#import "./TodoInputFragment.graphql"
+#import "../tags/TagFragment.graphql"
+
+fragment Todo on Todo {
+    ...TodoInput
+    done
+    created_at
+    updated_at
+    tags {
+        ...Tag
+    }
+}

@@ -1,0 +1,7 @@
+#import "./MessageFragment.graphql"
+
+query messages($filter: MessageFilter, , $pagination: Pagination) {
+    messages(filter: $filter, pagination: $pagination) {
+        ...Message
+    }
+}

@@ -1,0 +1,11 @@
+#import "./CommentFragment.graphql"
+
+subscription commentAdded($filter: SubscriptionFilter) {
+    commentAdded(filter: $filter) {
+        ...Comment
+        object {
+            name
+            id
+        }
+    }
+}

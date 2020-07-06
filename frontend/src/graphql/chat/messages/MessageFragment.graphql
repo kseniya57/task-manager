@@ -1,0 +1,12 @@
+#import "../../users/UserFragment.graphql"
+
+fragment Message on Message {
+    id
+    content
+    chat_id
+    created_at
+    updated_at
+    user {
+        ...User
+    }
+}

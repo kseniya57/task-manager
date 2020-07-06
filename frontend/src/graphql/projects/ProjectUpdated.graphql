@@ -1,0 +1,7 @@
+#import "./ProjectFragment.graphql"
+
+subscription projectUpdated($filter: SubscriptionFilter) {
+    projectUpdated(filter: $filter) {
+        ...Project
+    }
+}

@@ -1,0 +1,84 @@
+@import "variables"
+@import "mixins"
+@import "text"
+@import "flex"
+@import "helpers"
+@import "transitions"
+@import "gradients"
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons")
+@import url("https://fonts.googleapis.com/css?family=Lato:400,500,700|Montserrat:400,500,700|Open+Sans:400,500,700|Raleway:400,500,700|Roboto:400,500,700|Thasadith:400,500,700")
+
+html
+  font-size: 10px
+  box-sizing: border-box
+
+*, *::before, *::after
+  box-sizing: inherit
+  font-family: inherit
+  outline: none
+
+*:not(input.field)
+  &, &::before, &::after
+    user-select: none
+
+body
+  margin: 0
+  padding: 0
+  height: 100vh
+  overflow: hidden
+  width: 100%
+  font-family: $default-font
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-size: 1.2rem
+  line-height: 1.5
+  font-weight: 500
+  text-align: left
+  color: $text-color--base
+
+#app
+  width: 100%
+  height: 100%
+
+::-webkit-scrollbar
+  display: none
+
+p, h1, h2, h3, h4, h5, h6, ul, blockquote
+  padding: 0
+  margin: 0
+
+ul
+  list-style-type: none
+
+img
+  width: 100%
+  height: auto
+
+a
+  cursor: pointer
+
+  &, &:link
+    color: $text-color--base
+    text-decoration: none
+
+  &.disabled
+    color: $text-color--light
+    cursor: default
+
+.container
+  flex: 1
+  height: calc(100vh - #{$header-height})
+  overflow-y: auto
+
+.box
+  box-shadow: $default-shadow
+  background-color: $base
+  border-radius: .6rem
+
+@import "chart"
+@import "menus"
+@import "form"
+@import "markdown"
+@import "tag"
+@import "link"

@@ -1,0 +1,7 @@
+#import "./TagFragment.graphql"
+
+subscription tagAdded($filter: SubscriptionFilter) {
+    tagAdded(filter: $filter) {
+        ...Tag
+    }
+}

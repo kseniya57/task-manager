@@ -1,0 +1,7 @@
+#import "./AuthFragment.graphql"
+
+mutation Register($user: AuthInput!) {
+    register(user: $user) {
+        ...AuthOutput
+    }
+}

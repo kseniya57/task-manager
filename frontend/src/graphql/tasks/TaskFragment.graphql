@@ -1,0 +1,28 @@
+#import "../users/UserFragment.graphql"
+#import "../tags/TagFragment.graphql"
+#import "../comments/CommentFragment.graphql"
+
+fragment Task on Task {
+    id
+    name
+    description
+    position
+    project_id
+    created_at
+    updated_at
+    position
+    active
+    time
+    author {
+        ...User
+    }
+    assigned_to {
+        ...User
+    }
+    tags {
+        ...Tag
+    }
+    comments {
+        ...Comment
+    }
+}

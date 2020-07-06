@@ -1,0 +1,7 @@
+#import "./ChatFragment.graphql"
+
+query chats($filter: ChatFilter) {
+    chats(filter: $filter) {
+        ...Chat
+    }
+}

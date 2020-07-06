@@ -1,0 +1,15 @@
+.fade-enter-active, .fade-leave-active
+  transition: opacity .5s
+
+.fade-enter, .fade-leave-to
+  opacity: 0
+
+.slide-enter-active, .slide-leave-active, .slide--to-top-enter-active, .slide--to-top-leave-active
+  transition: $default-transition
+  transform: translateY(0) scaleY(1)
+
+.slide-enter, .slide-leave-to
+  transform: translateY(-50%) scaleY(0)
+
+.slide--to-top-enter, .slide--to-top-leave-to
+  transform: translateY(50%) scaleY(0)

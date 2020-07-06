@@ -1,0 +1,10 @@
+#import '../../users/UserFragment.graphql'
+
+fragment Commit on Commit {
+    id
+    message
+    author {
+        ...User
+    }
+    date
+}

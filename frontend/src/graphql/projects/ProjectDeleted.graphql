@@ -1,0 +1,5 @@
+subscription projectDeleted($filter: SubscriptionFilter) {
+    projectDeleted(filter: $filter) {
+        id
+    }
+}

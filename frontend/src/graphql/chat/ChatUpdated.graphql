@@ -1,0 +1,7 @@
+#import "./ChatFragment.graphql"
+
+subscription chatUpdated($filter: SubscriptionFilter) {
+    chatUpdated(filter: $filter) {
+        ...Chat
+    }
+}

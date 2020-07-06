@@ -1,0 +1,5 @@
+subscription chatDeleted($filter: SubscriptionFilter) {
+    chatDeleted(filter: $filter) {
+        id
+    }
+}

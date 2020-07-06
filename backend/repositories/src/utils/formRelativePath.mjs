@@ -1,0 +1,1 @@
+export default (projectId, name, path = '') => projectId + '/' + name + path;

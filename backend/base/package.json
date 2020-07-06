@@ -1,0 +1,27 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "keywords": [],
+  "author": "Kseniya <kaprisa57@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "lint:check": "eslint --ext .mjs src/",
+    "lint:fix": "eslint --ext .mjs src/ --fix"
+  },
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "@bifot/eslint-config": "^1.0.2",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

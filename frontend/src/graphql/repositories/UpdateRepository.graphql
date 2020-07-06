@@ -1,0 +1,7 @@
+#import "./RepositoryFragment.graphql"
+
+mutation updateRepository ($id: Int!, $input: RepositoryInput!) {
+    updateRepository (id: $id, input: $input) {
+        ...Repository
+    }
+}

@@ -1,0 +1,7 @@
+#import "./TeamFragment.graphql"
+
+mutation addTeam ($input: TeamInput!) {
+    addTeam (input: $input) {
+        ...Team
+    }
+}

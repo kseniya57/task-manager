@@ -1,0 +1,7 @@
+#import "./EventFragment.graphql"
+
+query events($filter: EventFilter) {
+    events(filter: $filter) {
+        ...Event
+    }
+}

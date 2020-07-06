@@ -1,0 +1,8 @@
+#import "./GitRepositoryFragment.graphql"
+#import "./commits/CommitFragment.graphql"
+
+query gitRepository($name: String!, $projectId: Int!) {
+    gitRepository(name: $name, projectId: $projectId) {
+        ...GitRepository
+    }
+}

@@ -1,0 +1,15 @@
+#import './RepositoryFragment.graphql'
+
+fragment GitRepository on Repository {
+    ...Repository
+    currentBranch
+    branches
+    commitsCount
+    tagsCount
+    size
+    files
+    extensions
+    lastCommit {
+        ...Commit
+    }
+}

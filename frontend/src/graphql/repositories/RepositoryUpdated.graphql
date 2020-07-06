@@ -1,0 +1,7 @@
+#import "./RepositoryFragment.graphql"
+
+subscription repositoryUpdated($filter: SubscriptionFilter) {
+    repositoryUpdated(filter: $filter) {
+        ...Repository
+    }
+}

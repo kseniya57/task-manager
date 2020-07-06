@@ -1,0 +1,25 @@
+{
+  "name": "repositories",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:check": "eslint --ext .mjs src/",
+    "lint:fix": "eslint --ext .mjs src/ --fix"
+  },
+  "keywords": [],
+  "author": "Kseniya <kaprisa57@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "base": "git+ssh://git@gitlab.com/kaprisa57/base.git",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@bifot/eslint-config": "^1.0.2",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

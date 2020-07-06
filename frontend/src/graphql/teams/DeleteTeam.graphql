@@ -1,0 +1,3 @@
+mutation deleteTeam($id: Int!) {
+    deleteTeam(id: $id)
+}

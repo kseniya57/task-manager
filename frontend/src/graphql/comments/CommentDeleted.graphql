@@ -1,0 +1,9 @@
+subscription commentDeleted($filter: SubscriptionFilter) {
+    commentDeleted(filter: $filter) {
+        id
+        object {
+            name
+            id
+        }
+    }
+}

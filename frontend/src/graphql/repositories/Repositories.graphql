@@ -1,0 +1,7 @@
+#import "./RepositoryFragment.graphql"
+
+query repositories($filter: RepositoryFilter) {
+    repositories(filter: $filter) {
+        ...Repository
+    }
+}

@@ -1,0 +1,7 @@
+#import "./TaskFragment.graphql"
+
+subscription taskUpdated($filter: SubscriptionFilter) {
+    taskUpdated(filter: $filter) {
+        ...Task
+    }
+}

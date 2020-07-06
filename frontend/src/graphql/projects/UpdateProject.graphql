@@ -1,0 +1,7 @@
+#import "./ProjectFragment.graphql"
+
+mutation updateProject ($id: Int!, $input: ProjectInput!) {
+    updateProject (id: $id, input: $input) {
+        ...Project
+    }
+}

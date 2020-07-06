@@ -1,0 +1,7 @@
+#import "./EventFragment.graphql"
+
+subscription eventAdded($filter: SubscriptionFilter) {
+    eventAdded(filter: $filter) {
+        ...Event
+    }
+}

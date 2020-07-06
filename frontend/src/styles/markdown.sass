@@ -1,0 +1,44 @@
+.markdown
+  font-size: 1.4rem
+  p
+    margin-bottom: 1rem
+  code
+    &:not([class^="language"])
+      padding: .1rem .2rem
+      background-color: rgba($accent, .2)
+      color: $accent
+      border-radius: .3rem
+    &[class^="language-"]
+      background-color: transparent!important
+  blockquote
+    border-left: .3rem solid $secondary
+    background-color: rgba($secondary, .2)
+    padding: .8rem
+    border-radius: .3rem
+    margin-bottom: 1rem
+  img
+    width: 50%
+    margin: .5rem
+  table
+    background-color: $base
+    border-radius: 1rem
+    margin-bottom: 1rem
+    overflow: hidden
+    border-collapse: collapse
+    tr
+      display: flex
+      &:first-child
+        border-bottom: $devider
+    thead
+      display: block
+      border-style: none
+      background-color: $dark
+      color: $white
+      text-transform: capitalize
+    th, td
+      padding: .5rem
+      flex: 1
+      &:not(:last-child)
+        border-right: $devider
+      min-width: 10rem
+

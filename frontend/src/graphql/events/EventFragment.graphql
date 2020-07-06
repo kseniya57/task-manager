@@ -1,0 +1,15 @@
+#import "../users/UserFragment.graphql"
+
+fragment Event on Event {
+    id
+    content
+    type
+    owner_id
+    owner_type
+    object
+    object_id
+    time
+    user {
+        ...User
+    }
+}

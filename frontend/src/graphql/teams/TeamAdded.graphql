@@ -1,0 +1,7 @@
+#import "./TeamFragment.graphql"
+
+subscription teamAdded($filter: SubscriptionFilter) {
+    teamAdded(filter: $filter) {
+        ...Team
+    }
+}

@@ -1,0 +1,7 @@
+#import "./CommentFragment.graphql"
+
+mutation addComment ($input: CommentInput!, $object: Object!) {
+    addComment (input: $input, object: $object) {
+        ...Comment
+    }
+}

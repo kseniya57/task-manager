@@ -1,0 +1,33 @@
+{
+  "name": "files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start ecosystem.config.js",
+    "parser": "node --experimental-modules --no-warnings src/jobs/parseSketchTemplates.mjs",
+    "lint:check": "eslint --ext .mjs src/",
+    "lint:fix": "eslint --ext .mjs src/ --fix"
+  },
+  "keywords": [],
+  "author": "Kseniya <kaprisa57@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "base64-img": "^1.0.4",
+    "chokidar": "^2.1.0",
+    "koa": "^2.6.2",
+    "koa-body": "^4.0.6",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@bifot/eslint-config": "^1.0.2",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

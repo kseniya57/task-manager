@@ -1,0 +1,8 @@
+#import "../users/UserFragment.graphql"
+
+fragment AuthOutput on AuthOutput {
+    token
+    user {
+        ...User
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start ecosystem.config.js --env development",
+    "start:prod": "pm2 start ecosystem.config.js --env production"
+  },
+  "keywords": [],
+  "author": "Kseniya <kaprisa57@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "base": "git+ssh://git@gitlab.com/kaprisa57/base.git"
+  }
+}

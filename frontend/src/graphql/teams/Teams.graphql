@@ -1,0 +1,7 @@
+#import "./TeamFragment.graphql"
+
+query teams {
+    teams {
+        ...Team
+    }
+}

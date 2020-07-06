@@ -1,0 +1,1 @@
+export default (singular) => singular.endsWith('y') ? `${singular.substring(0, singular.length - 1)}ies` : `${singular}s`

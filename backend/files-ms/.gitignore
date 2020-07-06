@@ -1,0 +1,9 @@
+node_modules/
+.idea/
+**/.DS_Store
+uploads/images/*
+!uploads/images/.gitkeep
+uploads/files/*
+!uploads/files/.gitkeep
+sketch/
+data/

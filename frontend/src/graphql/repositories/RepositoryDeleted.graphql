@@ -1,0 +1,5 @@
+subscription repositoryDeleted($filter: SubscriptionFilter) {
+    repositoryDeleted(filter: $filter) {
+        id
+    }
+}

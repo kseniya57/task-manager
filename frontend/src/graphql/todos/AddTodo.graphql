@@ -1,0 +1,7 @@
+#import "./TodoInputFragment.graphql"
+
+mutation addTodo ($input: TodoInput!) {
+    addTodo (input: $input) {
+        ...TodoInput
+    }
+}

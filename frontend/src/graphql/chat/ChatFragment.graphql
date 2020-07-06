@@ -1,0 +1,17 @@
+#import "../users/UserFragment.graphql"
+#import "./messages/MessageFragment.graphql"
+
+fragment Chat on Chat {
+    id
+    name
+    image
+    lastMessage {
+        ...Message
+    },
+    users {
+        ...User
+    }
+    totals {
+        count
+    }
+}

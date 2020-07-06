@@ -1,0 +1,7 @@
+#import "./TodoFragment.graphql"
+
+query todos($filter: TodoFilter) {
+    todos(filter: $filter) {
+        ...Todo
+    }
+}

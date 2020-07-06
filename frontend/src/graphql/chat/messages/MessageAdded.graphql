@@ -1,0 +1,7 @@
+#import "./MessageFragment.graphql"
+
+subscription messageAdded($filter: SubscriptionFilter) {
+    messageAdded(filter: $filter) {
+        ...Message
+    }
+}

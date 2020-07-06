@@ -1,0 +1,7 @@
+#import "./TodoFragment.graphql"
+
+subscription todoAdded($filter: SubscriptionFilter) {
+    todoAdded(filter: $filter) {
+        ...Todo
+    }
+}
