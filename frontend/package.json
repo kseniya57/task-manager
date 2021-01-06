@@ -16,7 +16,7 @@
     "apollo-link-http": "^1.5.9",
     "apollo-link-ws": "^1.0.12",
     "apollo-utilities": "^1.0.27",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "chart.js": "^2.7.3",
     "codemirror": "^5.42.2",
     "croppie": "^2.6.3",
