@@ -22,7 +22,7 @@
     "croppie": "^2.6.3",
     "emoji-mart-vue": "^2.6.6",
     "graphql": "^14.0.2",
-    "marked": "^0.5.2",
+    "marked": "^4.0.10",
     "moment": "^2.23.0",
     "prismjs": "^1.15.0",
     "ramda": "^0.26.1",
